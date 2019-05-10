@@ -330,35 +330,36 @@ def dogui(filename,select):
 
 def show(recommend_brand):
     if recommend_brand == "Spotify":
-        a = "/Users/andreshih/Desktop/Final_Project/圖片/spotify.gif"
+        # a = "/Users/andreshih/Desktop/Github/PBC-final_project/圖片/spotify.gif"
+        a = "/Users/andreshih/Desktop/Github/PBC-final_project/圖片/spotify.gif"
     elif recommend_brand == "KKBOX":
-        a ='/Users/andreshih/Desktop/Final_Project/圖片/kkbox.gif'
+        a ='/Users/andreshih/Desktop/Github/PBC-final_project/圖片/kkbox.gif'
     elif recommend_brand == "Apple Music":
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/apple.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/apple.gif'
 
     elif recommend_brand == 'Mixer Box':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/mixer_box.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/mixer_box.gif'
     elif recommend_brand == 'My Music':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/my_music.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/my_music.gif'
     elif recommend_brand == 'Street Voice 街聲':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/street_voice.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/street_voice.gif'
     elif recommend_brand == '香港和合石靈骨塔 (HK)':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/1.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/1.gif'
 
     elif recommend_brand == '龍巖櫻花陵園 (LungYen)':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/2.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/2.gif'
 
     elif recommend_brand == '美國Lakewood陵園 (Lakewood)':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/3.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/3.gif'
 
     elif recommend_brand == "巴黎拉雪茲神父墓園 (Paris) ":
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/4.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/4.gif'
 
     elif recommend_brand == '美國舊金山靈骨塔 (SF)':
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/5.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/5.gif'
 
     else:
-        a = '/Users/andreshih/Desktop/Final_Project/圖片/tenor.gif'
+        a = '/Users/andreshih/Desktop/Github/PBC-final_project/圖片/tenor.gif'
 
     r1 = tk.Tk()
     r1.title('謝謝您的填答！')

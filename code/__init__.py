@@ -13,7 +13,8 @@ step0 = gui.cho()
 # print(step0)
 
 if "音樂串流軟體" == step0:
-    filename = "/Users/andreshih/Desktop/Final_Project/data/music_final_data.csv"
+    # filename = "/Users/andreshih/Desktop/Final_Project/data/music_final_data.csv"
+    filename = "/Users/andreshih/Desktop/Github/PBC-final_project/data/music_final_data.csv"
     num = 2
 
 # elif "保養品" == step0:
@@ -21,7 +22,7 @@ if "音樂串流軟體" == step0:
 #     num = 28
 
 else:
-    filename = "/Users/andreshih/Desktop/Final_Project/data/塔位_final_data.csv"
+    filename = "/Users/andreshih/Desktop/Github/PBC-final_project/data/塔位_final_data.csv"
     num = 5
 
 
@@ -45,7 +46,7 @@ step3 = re.dore(filename,select_index,step2,data_frame)
 recommend_brand = step3
 
 
-# GUI 推薦圖
+# GUI 推薦圖r
 step4 = gui.show(recommend_brand)
 
 

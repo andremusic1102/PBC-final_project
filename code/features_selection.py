@@ -28,8 +28,8 @@ def run(filename,num):
     column_num = len(data.columns)
     brand_col_num = column_num - 1
 
-    # print(column_num)
-    # print(brand_col_num)
+    print(column_num)
+    print(brand_col_num)
 
 
     X, y = data[data.columns[1:brand_col_num]] , data[data.columns[brand_col_num]]
@@ -81,8 +81,8 @@ def run(filename,num):
     rfecv.fit(X, y)
     print()
     print("Optimal number of features : %d" % rfecv.n_features_)
-    # print("預測率 =",max(rfecv.grid_scores_))
-    # print("Ranking of features : %s" % rfecv.ranking_)
+    print("預測率 =",max(rfecv.grid_scores_))
+    print("Ranking of features : %s" % rfecv.ranking_)
 
 
     # 找出要的特徵
@@ -126,5 +126,14 @@ def run(filename,num):
 
     # # 如果想看特定的欄位
     # # print(data[data.columns[20]])
+    
+    import matplotlib.pyplot as plt
+    # 畫圖
+    # Plot number of features VS. cross-validation scores
+    plt.figure()
+    plt.xlabel("Number of features selected")
+    plt.ylabel("Cross validation score (nb of correct classifications)")
+    plt.plot(range(1, len(rfecv.grid_scores_) + 1), rfecv.grid_scores_)
+    plt.show()
 
     return select_index , select_list,data_frame
